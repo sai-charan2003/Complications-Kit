@@ -78,4 +78,19 @@ object DateUtils {
         return calendar.getActualMaximum(Calendar.DAY_OF_YEAR).toFloat()
 
     }
+
+    /**
+     * This will return current month in short form
+     */
+
+    fun getCurrentMonth() : String{
+        val calendar = Calendar.getInstance()
+        return calendar.getDisplayName(Calendar.MONTH, Calendar.SHORT, Locale.getDefault())
+    }
+
+    fun getMaxCurrentMonthDays() : Float {
+        val calendar = Calendar.getInstance()
+        return calendar.getActualMaximum(Calendar.DAY_OF_MONTH).toFloat()
+
+    }
 }
