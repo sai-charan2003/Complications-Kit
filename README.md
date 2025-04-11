@@ -16,7 +16,7 @@ Month Progress
 
 More to come...
 
-## ScreenShots
+## Screenshots
 
 <div align="center">
   <img style="border-radius: 50%" src="screenshots/screenshot_1.png" width="800px" style = padding: 10px>
