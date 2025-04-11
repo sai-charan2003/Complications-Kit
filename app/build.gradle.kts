@@ -5,6 +5,11 @@ plugins {
 }
 
 android {
+    android {
+        lint {
+            baseline = file("lint-baseline.xml")
+        }
+    }
     namespace = "com.charan.complicationskit"
     compileSdk = 35
 
@@ -13,7 +18,7 @@ android {
         minSdk = 30
         targetSdk = 35
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.1"
 
     }
 

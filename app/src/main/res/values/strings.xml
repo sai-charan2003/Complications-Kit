@@ -4,9 +4,9 @@
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
     -->
-    <string name="day_date_complication">Day Date</string>
-    <string name="day_date_progress_complication">Day Date Progress</string>
-    <string name="year_progress">Year Progress</string>
-    <string name="month_progress">Month Progress</string>
+    <string translatable="false" name="day_date_complication">Day Date</string>
+    <string translatable="false" name="day_date_progress_complication">Day Date Progress</string>
+    <string translatable="false" name="year_progress">Year Progress</string>
+    <string translatable="false" name="month_progress">Month Progress</string>
 
 </resources>

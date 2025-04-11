@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.9.0" type="baseline" client="gradle" dependencies="false" name="AGP (8.9.0)" variant="fatal" version="8.9.0">
+
+    <issue
+        id="ExtraTranslation"
+        message="&quot;hello_world&quot; is translated here but not found in default locale"
+        errorLine1="    &lt;string name=&quot;hello_world&quot;>From the Round world,\nHello, %1$s!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values-round/strings.xml"
+            line="2"
+            column="13"/>
+    </issue>
+
+</issues>
