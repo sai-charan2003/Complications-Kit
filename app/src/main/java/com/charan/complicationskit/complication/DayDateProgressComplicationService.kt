@@ -8,6 +8,7 @@ import androidx.wear.watchface.complications.data.RangedValueComplicationData
 import androidx.wear.watchface.complications.data.ShortTextComplicationData
 import androidx.wear.watchface.complications.datasource.ComplicationRequest
 import androidx.wear.watchface.complications.datasource.SuspendingComplicationDataSourceService
+import com.charan.complicationskit.utils.ComplicationUtils
 import com.charan.complicationskit.utils.Constants.TOTAL_MIN_IN_DAY
 import com.charan.complicationskit.utils.DateUtils
 import kotlin.math.min
@@ -44,6 +45,7 @@ class DayDateProgressComplicationService : SuspendingComplicationDataSourceServi
         )
             .setText(PlainComplicationText.Builder(day).build())
             .setTitle(PlainComplicationText.Builder(date).build())
+            .setTapAction(ComplicationUtils.openCalender(this))
             .build()
 
 

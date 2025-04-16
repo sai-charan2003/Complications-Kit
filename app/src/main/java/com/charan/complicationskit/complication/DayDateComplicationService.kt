@@ -9,6 +9,7 @@ import androidx.wear.watchface.complications.data.PlainComplicationText
 import androidx.wear.watchface.complications.data.ShortTextComplicationData
 import androidx.wear.watchface.complications.datasource.ComplicationRequest
 import androidx.wear.watchface.complications.datasource.SuspendingComplicationDataSourceService
+import com.charan.complicationskit.utils.ComplicationUtils
 import com.charan.complicationskit.utils.DateUtils
 
 class DayDateComplicationService : SuspendingComplicationDataSourceService() {
@@ -34,5 +35,6 @@ class DayDateComplicationService : SuspendingComplicationDataSourceService() {
             )
             .setMonochromaticImage(MonochromaticImage.PLACEHOLDER)
             .setTitle(PlainComplicationText.Builder(day).build())
+            .setTapAction(ComplicationUtils.openCalender(this))
             .build()
 }

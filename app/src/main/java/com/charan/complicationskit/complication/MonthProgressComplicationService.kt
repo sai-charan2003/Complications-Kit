@@ -6,6 +6,7 @@ import androidx.wear.watchface.complications.data.PlainComplicationText
 import androidx.wear.watchface.complications.data.RangedValueComplicationData
 import androidx.wear.watchface.complications.datasource.ComplicationRequest
 import androidx.wear.watchface.complications.datasource.SuspendingComplicationDataSourceService
+import com.charan.complicationskit.utils.ComplicationUtils
 import com.charan.complicationskit.utils.DateUtils
 
 class MonthProgressComplicationService : SuspendingComplicationDataSourceService() {
@@ -41,6 +42,7 @@ class MonthProgressComplicationService : SuspendingComplicationDataSourceService
             max = maxValue,
             contentDescription = PlainComplicationText.Builder("Month").build())
             .setText(PlainComplicationText.Builder(month).build())
+            .setTapAction(ComplicationUtils.openCalender(this))
             .build()
 
 
